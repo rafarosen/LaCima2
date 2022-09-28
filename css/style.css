@@ -18,17 +18,11 @@ a{
     color: #000;
 }
 
-a:hover{
-    color: red;
-}
-
-i:hover{
+:hover{
     color: red;
 }
 
 header{
-    
- 
     background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(103,191,148,1) 53%, rgba(253,187,45,1) 100%);
     width: 100%;
     padding-top: 2em;
@@ -355,24 +349,20 @@ footer div{
     text-align: center;
     text-decoration: none;  
     margin-right: 4em; 
+    color: white
+    transition: transform 3s, color 3s;  
 }
   
 .fa-facebook {  
-    background: #3B5998;  
-    color: white;
-    transition: transform 3s, color 3s;  
+    background: #3B5998;      
 }  
 
 .fa-instagram {  
-    background: hwb(22 5% 21%);  
-    color: white;
-    transition: transform 3s, color 3s;  
+    background: hwb(22 5% 21%); 
 }
 
 .fa-twitter {  
     background: rgb(13, 151, 201);  
-    color: white;
-    transition: transform 3s, color 3s;  
 }
 
 /* responsive */
@@ -412,7 +402,7 @@ footer div{
     .top{
         display: flex;
         flex-direction: column;
-        justify-content:space-between
+        justify-content:space-between;
         margin: 20px;
         text-align: center;
         font-size: large;
