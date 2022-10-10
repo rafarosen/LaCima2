@@ -95,6 +95,13 @@
             justify-content: center;
           
         }
+
+        .nombre, .telefono, .correo, .comentarios {
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            align-items: none;
+            width: 50%;
     
     }   
 }
