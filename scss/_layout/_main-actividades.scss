@@ -1,0 +1,20 @@
+.tituloAct{
+    @include measures (none, 1em, 1em)
+    text-align: center;
+    }
+    
+.masInfo{
+@extend .tituloAct;
+    }
+    
+.top{
+    @include flex (row, space-evenly, none)
+    margin-bottom: 4em;
+    text-align: center;
+    font-size: x-large;
+    }
+    
+.bottom{
+    @extend .top;
+    margin-bottom: 2em;
+    }

@@ -1,0 +1,54 @@
+.grid-nosotros{
+    display: grid;
+    grid-template-areas: 
+        'nos2 nos2'
+        'nos1 nos3'
+        'nos1 nos3'
+        'nos4 nos4';
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 100px 100px 100px 100px;
+    width: 200px;
+    height: 600px;
+    margin: 3em 2em;
+    }
+    
+    
+.nos1{
+    grid-area: nos1;
+    }
+    
+.nos2{
+    grid-area: nos2;
+    }
+    
+.nos3{
+    grid-area: nos3;
+    }
+    
+.nos4{
+    grid-area: nos4;
+    }
+    
+    
+.titulo-historia{
+    @include measures (none, 1em, none)
+    }
+    
+.texto-historia{
+    margin: 1em 2em;
+    }
+    
+.nuestros-profes{
+    @extend .titulo-historia
+    }
+    
+.profes{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1em;
+    }
+    
+.texto-profes{
+    margin-top: 12em;
+    width: 70%;
+    }

@@ -1,0 +1,20 @@
+.presentacion{
+        margin: 10em;
+        margin-top: 0;
+    }
+
+.imagenes{
+    @include flex (none, center, none)
+    margin: 3em;
+    } 
+    
+.borde-imagenes{
+    @include measures (none, 1em, 1em)
+    border-color: black;
+    border: 0.5em solid darkseagreen;
+    box-shadow: 0.5em 0.5em 0.2em 0.2em;
+    }
+    
+.i-underline { 
+    text-decoration: underline; 
+    }

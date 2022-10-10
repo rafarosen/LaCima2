@@ -1,0 +1,32 @@
+footer{
+    @include measures (100%, none, 1.8em)
+    background-color:$background-principal;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    div{
+        @include flex (row, flex-end, center)
+        width: 100%;
+        }
+    }
+
+.fa {
+    @include measures (3em, none, 1em)
+    font-size: 1em;
+    text-align: center;
+    text-decoration: none;  
+    margin-right: 4em; 
+    color: white
+}
+  
+.fa-facebook {  
+    background: #3B5998;      
+}  
+
+.fa-instagram {  
+    background: hwb(22 5% 21%); 
+}
+
+.fa-twitter {  
+    background: rgb(13, 151, 201);  
+}

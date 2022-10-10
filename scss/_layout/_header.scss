@@ -1,0 +1,53 @@
+header{
+    @include flex (row, none, none)
+    background: $background-principal;
+    width: 100%;
+    padding-top: 2em;
+    padding-bottom: 0;
+    position:sticky;
+    top: 0;
+    z-index: 9999;
+    height: 10%;
+    div{
+        display: flex;
+        flex-direction: row;
+        margin: 0.2em; 
+        div{
+            margin-top: -30px;
+        } 
+    }
+}
+
+.nav-normal {
+    @include flex (row, flex-end, center)
+    width: 100%;
+    margin-left: 10em;
+}
+
+.nav-normal__menu{
+    list-style: none;
+    margin-right: 3em;
+    font-size: medium;
+}
+
+.nav-li{
+    display: flex;
+    margin-inline: 1em;
+}
+
+.logo{
+    @include measures (none, 1em, 0.5em)
+    }
+    
+a{
+    text-decoration: none;
+    color: #000;
+    }
+
+a:hover{
+    color: red;
+}
+
+i:hover{
+    color: red;
+}
