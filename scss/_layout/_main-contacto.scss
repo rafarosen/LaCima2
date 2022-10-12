@@ -1,0 +1,70 @@
+input{
+    display: block;
+    }
+
+input[type=text] {
+    @include measures (none, 1em 3em, 1em);
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    border-radius:10px;
+    }
+
+input[type=tel] {
+    @include measures (none, 1em 3em, 1em);
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    border-radius:10px;
+    }
+
+input[type=email] {
+    @include measures (none, 1em 3em, 1em);
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    border-radius:10px;
+    }
+
+label{
+    margin: 1em 3em;
+    }
+
+.titulo-form{
+    margin-right: 3em;
+    align-items: center;
+    }
+
+.dudas{
+    @include measures (none, 2em, 1em);
+    font-size: large;
+    }
+
+.nombre{
+    @include flex (column, left, none);
+    width: 30%;
+    }
+
+.telefono{
+    @extend .nombre;
+    }
+
+.correo{
+    @extend .nombre;
+    }
+
+.comentarios{
+    @include flex (column, left, none);
+    }
+
+textarea {
+    @include measures (30%, 1em 3em, 1em);
+    border-radius: 10px;
+    }
+
+.botones-formulario{
+    display: inline;
+    width: 80px;
+    background: darkseagreen;
+    color: white;
+    border-radius: 10px;
+    margin-left: 3em;
+    }
+
+.mapa{
+    margin: 3em;
+    }

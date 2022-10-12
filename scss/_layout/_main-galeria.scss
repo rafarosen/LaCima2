@@ -1,0 +1,52 @@
+.titulo-galeria{
+    @include measures (none, 1em, 1em);
+    text-align: center;
+    }
+
+.grid-layout{
+    display: grid;
+    grid-template-areas: 
+        'gal1 gal3 gal3 gal2'
+        'gal1 gal8 gal8 gal2'
+        'gal4 gal9 gal12 gal12'
+        'gal4 gal9 gal11 gal11';
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 200px 200px 200px 200px;
+    width: 800px;
+    height: 800px;
+    margin: 2em 15em;
+    justify-content: center;
+    }
+
+
+.gal1{
+    grid-area: gal1;   
+    }
+
+.gal2{
+    grid-area: gal2;
+    }
+
+.gal3{
+    grid-area: gal3;
+    }
+
+.gal4{
+    grid-area: gal4;
+    }
+
+.gal8{
+    grid-area: gal8;
+    }
+
+.gal9{
+    grid-area: gal9;
+    }
+
+.gal11{
+    grid-area: gal11;
+    }
+
+.gal12{
+    grid-area: gal12;
+    }

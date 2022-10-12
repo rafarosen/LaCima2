@@ -1,0 +1,19 @@
+.tituloAct{
+    padding: 1em;
+    margin: 1em;
+    text-align: center;
+    }
+
+.masInfo{
+    @extend .tituloAct;
+    }
+
+.top{
+    @include flex (row, space-evenly, center);
+    margin-bottom: 3em;
+    font-size: x-large;
+    }
+
+.bottom{
+    @extend .top;
+    }

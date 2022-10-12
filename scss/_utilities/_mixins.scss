@@ -1,0 +1,273 @@
+@mixin flex($direction,$justify,$align) {
+
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;  
+    }
+
+@mixin measures($width, $margin, $padding){
+    width: $width;
+    margin: $margin;
+    padding: $padding;
+    }
+
+
+@mixin reset {
+    margin: 0;
+    padding: 0;
+    color: black;
+    box-sizing: border-box;
+}
+
+@mixin media-sm {
+    @media (max-width: 599px) {
+        header{
+            background: darkseagreen;
+            width: 100%;
+            padding-top: 2em;
+            padding-bottom: 0;
+            position:sticky;
+            top: 0;
+            z-index: 9999;
+            display: flex;
+            flex-direction: row; 
+            height: 10%;
+            }
+
+        .nav-normal{
+            display: none;
+            }
+        .nav-responsive {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding-top: 4.5em;
+            width: 100%;
+            list-style: none;
+            font-size: small;
+            height: auto;
+            }
+        .nav-responsive__li {
+            list-style: none;
+            margin-right: 1em;
+            font-size: small;
+            }
+        .nav-r{
+            display: flex;
+            margin-inline: 1em;
+            }
+        .imagenes{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 1em;
+            max-width: 100%;
+            max-height: auto;
+            }
+        .top{
+            display: flex;
+            flex-direction: column;
+            margin: 5px;
+            text-align: center;
+            font-size: large;
+            }
+            
+        .bottom{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            margin: 5px;
+            text-align: center;
+            font-size: large;
+            }
+        
+        .mapa{
+            width: 300px;
+            height: auto;
+            }
+        
+        .grid-layout{
+            display: grid;
+            grid-template-areas: 
+            'gal3 gal3'
+            'gal8 gal8'
+            'gal1 gal2'
+            'gal1 gal2'
+            'gal12 gal12'
+            'gal11 gal11'
+            'gal4 gal9'
+            'gal4 gal9';
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: auto;
+            flex: 100%;
+            max-width: 100%;
+            height: auto;
+            margin: 1em;
+            justify-content: center;
+            }
+        
+        .nombre{
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            width: 60%;
+            }
+            
+        .telefono{
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            width: 60%;
+            }
+            
+        .correo{
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            width: 60%;
+            }
+            
+        .comentarios{
+            display: flex;
+            flex-direction: column;
+            justify-content: left    
+            }
+            
+        textarea {
+            border-radius: 10px;
+            width: 40%;
+            margin: 1em 3em;
+            padding: 1em;
+            }
+            
+        .botones-formulario{
+            display: inline;
+            width: 60px;
+            background: darkseagreen;
+            color: white;
+            border-radius: 10px;
+            margin-left: 3em;
+            }
+        
+        footer{
+            @include measures (100%, none, 1.8em);
+            background-color: darkseagreen;
+            bottom: 0%;
+            height: 10%;
+            display: flex;
+            flex-direction: row;
+            div{
+                @include flex( row, center, center);
+                width: 100%;
+                }
+            }
+        
+        .fa {
+            @include measures (2.5em, none, 1em);
+            font-size: 1em;
+            text-align: center;
+            text-decoration: none;  
+            margin-right: 1em; 
+            color: white;
+            transition: transform 3s, color 3s;
+            }
+        }
+}
+
+    
+@mixin media-md {
+    @media (max-width: 999px) and (min-width:600px) {
+        .nav-normal{
+            display: none;
+            }
+        .nav-responsive {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            width: 100%;
+            margin-left: 1em;
+            list-style: none;
+            margin-right: 3em;
+            font-size: medium;
+            position: relative;
+            }
+        .nav-responsive__li {
+            list-style: none;
+            margin-right: 3em;
+            font-size: medium;
+            }
+        .nav-r{
+            display: flex;
+            margin-inline: 1em;
+            }
+        .imagenes{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 1em;
+            max-width: 100%;
+            max-height: auto;
+            }
+        .top{
+            display: flex;
+            flex-direction: column;
+            justify-content:space-between;
+            margin: 20px;
+            text-align: center;
+            font-size: large;
+            }
+        
+        .bottom{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            margin: 30px;
+            text-align: center;
+            font-size: large;
+            }
+        .grid-layout{
+            display: grid;
+            grid-template-areas: 
+                'gal1 gal3 gal3 gal2'
+                'gal1 gal8 gal8 gal2'
+                'gal4 gal9 gal12 gal12'
+                'gal4 gal9 gal11 gal11';
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: 200px 200px 200px 200px;
+            max-width: 100%;
+            height: auto;
+            margin: 1em;
+            justify-content: center;
+            }
+
+        .nombre, .telefono, .correo {
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            width: 50%; }
+            
+            .comentarios {
+            display: flex;
+            flex-direction: column;
+            justify-content: left; }
+            
+            textarea {
+            border-radius: 10px;
+            width: 40%;
+            margin: 1em 3em;
+            padding: 1em; }
+              
+
+        }
+
+    }
+
+@mixin media-lg {
+    @media (min-width: 1000px) {
+        .nav-responsive {
+            display: none;
+            }
+        }
+}
