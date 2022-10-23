@@ -169,21 +169,21 @@ input {
   display: block; }
 
 input[type=text] {
-  width: none;
+  width: 80%;
   margin: 1em 3em;
   padding: 1em;
   box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
   border-radius: 10px; }
 
 input[type=tel] {
-  width: none;
+  width: 80%;
   margin: 1em 3em;
   padding: 1em;
   box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
   border-radius: 10px; }
 
 input[type=email] {
-  width: none;
+  width: 80%;
   margin: 1em 3em;
   padding: 1em;
   box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
@@ -193,27 +193,31 @@ label {
   margin: 1em 3em; }
 
 .titulo-form {
-  margin-right: 3em;
-  align-items: center; }
+  margin-left: 4em;
+  align-items: center;
+  justify-content: center; }
 
 .dudas {
   width: none;
   margin: 2em;
   padding: 1em;
-  font-size: large; }
+  font-size: large;
+  align-items: center; }
 
 .nombre, .telefono, .correo {
   display: flex;
   flex-direction: column;
-  justify-content: left;
-  align-items: none;
+  justify-content: center;
+  align-items: center;
+  margin-left: 3em;
   width: 30%; }
 
 .comentarios {
   display: flex;
   flex-direction: column;
   justify-content: left;
-  align-items: none; }
+  align-items: none;
+  width: 100%; }
 
 textarea {
   width: 30%;
@@ -286,14 +290,14 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-top: 4.5em;
+    padding-top: 2.3em;
     width: 100%;
     list-style: none;
     font-size: small;
     height: auto; }
   .nav-responsive__li {
     list-style: none;
-    margin-right: 1em;
+    margin-right: 0;
     font-size: small; }
   .nav-r {
     display: flex;
@@ -302,20 +306,22 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 1em;
-    max-width: 100%;
+    justify-content: center;
+    max-width: 60%;
     max-height: auto; }
   .top, .bottom {
     display: flex;
     flex-direction: column;
-    margin: 5px;
+    margin-left: 3em;
+    max-width: 60%;
     text-align: center;
     font-size: large; }
   .bottom {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    margin: 5px;
+    margin-left: 3em;
+    max-width: 60%;
     text-align: center;
     font-size: large; }
   .mapa {
@@ -327,29 +333,34 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     flex: 100%;
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
     margin: 1em;
     justify-content: center; }
+  .dudas {
+    margin: 1em; }
   .nombre, .telefono, .correo {
     display: flex;
     flex-direction: column;
-    justify-content: left;
-    width: 60%; }
+    justify-content: center;
+    width: 60%;
+    margin: 1em; }
   .telefono {
     display: flex;
     flex-direction: column;
-    justify-content: left;
+    justify-content: center;
     width: 60%; }
   .correo {
     display: flex;
     flex-direction: column;
-    justify-content: left;
+    justify-content: center;
     width: 60%; }
   .comentarios {
     display: flex;
     flex-direction: column;
-    justify-content: left; }
+    justify-content: center;
+    margin-left: 1em;
+    width: 95%; }
   textarea {
     border-radius: 10px;
     width: 40%;
@@ -362,6 +373,10 @@ footer {
     color: white;
     border-radius: 10px;
     margin-left: 3em; }
+  .mapa {
+    margin: 1em;
+    align-items: center;
+    width: 70%; }
   footer {
     width: 100%;
     margin: none;

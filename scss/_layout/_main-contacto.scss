@@ -3,19 +3,19 @@ input{
     }
 
 input[type=text] {
-    @include measures (none, 1em 3em, 1em);
+    @include measures (80%, 1em 3em, 1em);
     box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
     border-radius:10px;
     }
 
 input[type=tel] {
-    @include measures (none, 1em 3em, 1em);
+    @include measures (80%, 1em 3em, 1em);
     box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
     border-radius:10px;
     }
 
 input[type=email] {
-    @include measures (none, 1em 3em, 1em);
+    @include measures (80%, 1em 3em, 1em);
     box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
     border-radius:10px;
     }
@@ -25,17 +25,20 @@ label{
     }
 
 .titulo-form{
-    margin-right: 3em;
+    margin-left: 4em;
     align-items: center;
+    justify-content: center;
     }
 
 .dudas{
     @include measures (none, 2em, 1em);
     font-size: large;
+    align-items: center;
     }
 
 .nombre{
-    @include flex (column, left, none);
+    @include flex (column, center, center);
+    margin-left: 3em;
     width: 30%;
     }
 
@@ -49,6 +52,7 @@ label{
 
 .comentarios{
     @include flex (column, left, none);
+    width: 100%;
     }
 
 textarea {
